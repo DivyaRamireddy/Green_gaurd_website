@@ -10,10 +10,13 @@
   <script src="https://kit.fontawesome.com/a2d9b5f5e6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- NAV (same structure as index) -->
+  <!-- NAV -->
   <header class="nav-fixed">
     <div class="container nav">
-      <a class="logo" href="index.html"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a6c6c6e0b6d6f8d3b0b" alt="logo"><span>GreenGuard</span></a>
+      <a class="logo" href="index.html">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a6c6c6e0b6d6f8d3b0b" alt="logo">
+        <span>GreenGuard</span>
+      </a>
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -26,9 +29,8 @@
         </ul>
       </nav>
       <div class="nav-actions">
-        <span id="userDisplay"></span>
-        <a class="btn btn-outline" id="loginBtn2" href="login.html">Login</a>
-        <a class="btn btn-primary" id="regBtn2" href="register.html">Register</a>
+        <a class="btn btn-outline" href="login.html">Login</a>
+        <a class="btn btn-primary" href="register.html">Register</a>
       </div>
     </div>
   </header>
@@ -40,7 +42,35 @@
     </section>
 
     <section id="diseaseList" class="disease-grid">
-      <!-- Cards rendered by JS -->
+      <div class="d-card fade-in">
+        <h3>Powdery Mildew</h3>
+        <p>White powder-like spots on leaves; caused by fungal infection. Common in warm, dry conditions.</p>
+      </div>
+
+      <div class="d-card fade-in">
+        <h3>Bacterial Blight</h3>
+        <p>Dark, water-soaked lesions on leaves and stems; spreads rapidly in humid weather.</p>
+      </div>
+
+      <div class="d-card fade-in">
+        <h3>Root Rot</h3>
+        <p>Caused by overwatering and poor soil drainage; roots become brown and mushy.</p>
+      </div>
+
+      <div class="d-card fade-in">
+        <h3>Leaf Spot Disease</h3>
+        <p>Small brown or black circular spots on leaves, leading to yellowing and premature drop.</p>
+      </div>
+
+      <div class="d-card fade-in">
+        <h3>Rust Disease</h3>
+        <p>Orange or reddish pustules appear on leaf undersides; affects cereal and vegetable crops.</p>
+      </div>
+
+      <div class="d-card fade-in">
+        <h3>Wilt Disease</h3>
+        <p>Caused by fungi that block water flow; plants appear droopy even with adequate moisture.</p>
+      </div>
     </section>
   </main>
 
@@ -51,3 +81,5 @@
   </footer>
 </body>
 </html>
+
+
