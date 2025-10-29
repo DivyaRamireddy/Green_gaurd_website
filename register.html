@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Register — GreenGuard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="nav-fixed">
+    <div class="container nav">
+      <a class="logo" href="index.html"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a6c6c6e0b6d6f8d3b0b" alt="logo"><span>GreenGuard</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diseases.html">Diseases</a></li>
+          <li><a href="symptoms.html">Symptoms</a></li>
+          <li><a href="remedies.html">Causes & Remedies</a></li>
+          <li><a href="solutions.html">Sustainable Solutions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <span id="userDisplayReg"></span>
+        <a class="btn btn-outline" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page form-page">
+    <h2>Create an Account</h2>
+    <form id="registerForm" class="auth-form">
+      <input type="text" id="rname" placeholder="Full name" required>
+      <input type="email" id="remail" placeholder="Email" required>
+      <select id="rrole" required>
+        <option value="">Select role</option>
+        <option value="farmer">Farmer</option>
+        <option value="student">Student</option>
+        <option value="visitor">Visitor</option>
+      </select>
+      <input type="password" id="rpassword" placeholder="Password (min 6 chars)" minlength="6" required>
+      <button class="btn btn-primary" type="submit">Register</button>
+      <p>Already registered? <a href="login.html">Login here</a></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>GreenGuard © 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
